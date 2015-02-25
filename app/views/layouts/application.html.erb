@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Senetur</title>
+
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "animate.min.css" %>
+  
+  <!-- FONT ICONS -->
+  <link rel="stylesheet" href="assets/icons/icons.css">
+  
+  <!-- CAROUSEL AND LIGHTBOX -->
+  <%= stylesheet_link_tag "owl.theme.css" %>
+  <%= stylesheet_link_tag "owl.carousel.css" %>
+  <%= stylesheet_link_tag "nivo-lightbox.css" %>
+  <%= stylesheet_link_tag "nivo_themes/default/default.css" %>
+  
+  <!-- CUSTOM STYLESHEETS -->
+  <%= stylesheet_link_tag "styles.css" %>
+  
+  <!-- RESPONSIVE FIXES -->
+  <%= stylesheet_link_tag "responsive.css" %>
+  
+  <!-- COLORS -->
+  <!--link rel="stylesheet" href="css/colors/blue.css"-->
+  <!-- DEFAULT COLOR/ CURRENTLY USING -->
+  <!--link rel="stylesheet" href="css/colors/red.css"-->
+  <!-- = stylesheet_link_tag "colors/green.css" -->
+  <!-- = stylesheet_link_tag "colors/green2.css" -->
+  <!-- = stylesheet_link_tag "colors/purple.css" -->
+  <%= stylesheet_link_tag "colors/orange.css" %>
+</head>
+<body>
+
+  <%= yield %>
+
+    <%= javascript_include_tag "jquery.js" %>
+    <script>
+        /* PRE LOADER */
+        jQuery(window).load(function () {
+            "use strict";
+            jQuery(".status").fadeOut();
+            jQuery(".preloader").delay(1000).fadeOut("slow");
+        })
+    </script>
+    <%= javascript_include_tag "smoothscroll.js" %>
+    <%= javascript_include_tag "bootstrap.min.js" %>
+    <%= javascript_include_tag "jquery.nav.js" %>
+    <%= javascript_include_tag "wow.min.js" %>
+    <%= javascript_include_tag "nivo-lightbox.min.js" %>
+    <%= javascript_include_tag "owl.carousel.min.js" %>
+    <%= javascript_include_tag "jquery.stellar.min.js" %>
+    <%= javascript_include_tag "retina.min.js" %>
+    <%= javascript_include_tag "jquery.ajaxchimp.min.js" %>
+    <%= javascript_include_tag "jquery.videoBG.js" %>
+    
+    <!-- GOGLE MAP -->
+     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
+    
+    <!-- CUSTOM JS  -->
+    <%= javascript_include_tag "custom.js" %>
+</body>
+</html>
