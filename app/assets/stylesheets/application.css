@@ -19,6 +19,6 @@
  *= require styles
  *= require responsive
  *= require colors/orange
- *= require icons
+ *= require icons/icons
  *= require_self
  */
