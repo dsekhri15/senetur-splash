@@ -7,7 +7,8 @@ Rails.application.config.assets.precompile += ['*.js']
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
-config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+#Compile all the assets so the icons work
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
