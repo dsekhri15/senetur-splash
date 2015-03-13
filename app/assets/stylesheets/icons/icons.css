@@ -2,7 +2,10 @@
 
 @font-face {
   font-family: "stamp-icons";
-  src: url('fonts/stamp-icons.woff') format("woff"),
+  src: url('fonts/stamp-icons.eot');
+  src: url('fonts/stamp-icons.eot?#iefix') format('embedded-opentype'),
+	url('fonts/stamp-icons.svg#stamp-icons') format('svg'),
+	url('fonts/stamp-icons.woff') format("woff"),
     url('fonts/stamp-icons.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
