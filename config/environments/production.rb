@@ -87,7 +87,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
-
+  
+  #Added by Brian to try to get the icon assets working
+  #config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  #config.assets.precompile += %w( .svg .eot .woff .ttf)
+  
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
